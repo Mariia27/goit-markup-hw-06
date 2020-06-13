@@ -51,34 +51,59 @@
       </div>
     </header>
     <main>
-      <!-- герой -->
+     
+
+    <!-- ФОРМИ-->
+    <form class="form js-speaker-form">
+    <div class="forma">
+      <h2 class="topic"> Оставьте свои данные, мы вам перезвоним</h2>
+      <div>
+        <label for="message">Имя
+          <input type="text" name="mail" />
+        </label>
+      </div>
+    
+      <div>
+        <label for="tel">Телефон
+          <input type="tel" name="mail" />
+        </label>
+      </div>
+    
+      <div>
+        <label for="email">Почта
+          <input type="email" name="email" />
+        </label> 
+      </div>
+    
+      <div>
+        <textarea>
+        </textarea>
+      </div>
+      <div>
+        <label for="conditions">
+          <input type="checkbox" name="" value="conditions">Соглашаюсь с рассылкой и принимаю Условия договора
+        </label>
+      </div>
+    <button type="submit" class="button-form">Отправить</button>
+    <button type="button" class="button-close">
+      <svg class="icon-close" width="11px" height="11px">
+        <use href="./images/svg.svg#icon-close"></use>
+      
+      </svg>
+    </button>
+    </div>
+    </form>
+
+ <!-- герой -->
       <section class="hero">
         <h1 class="section-hero">
           ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
           ДЛЯ ВАШЕГО БИЗНЕСА
         </h1>
-        <form class="form js-speaker-form"></form>
+        
 
-
-<form>
-  <!-- Клик по тексту "Сообщение" поставит курсор в поле ввода -->
-  <label>
-    Сообщение
-    <input type="text" />
-  </label>
-
-  <form>
-    <!-- Клик по тексту "Сообщение" поставит курсор в поле ввода -->
-    <label for="message">Сообщение</label>
-    <input type="text" id="message" />
-  
-    <button type="submit">Отправить</button>
-  </form>
-
-
-
-        <button type="button" class="button-main">Заказать услугу</button>
-        </form>
+    <button type="button" class="button-main">Заказать услугу</button>
+        
       </section>
       <!-- наші переваги -->
       <section class="our-advantage">
@@ -426,11 +451,11 @@
       </div>
       <div class="join">
        <p class="join-text"> Подпишитесь на рассылку </p>
-      <form>
+      <form class="footer-form">
         <label for="mail">E-mail</label>
         <input type="email" id="mail" />
                  
-      <button class="button-subscription" type="button" >Подписаться
+        <button class="button-subscription" type="button" >Подписаться
 
         <svg class="button-icon" width="24px" height="24px">
           <use href="./images/symbol-defs.svg#icon-send"></use>

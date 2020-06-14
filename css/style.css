@@ -268,18 +268,22 @@ span {
   color: var(--hero-text-color);
 }
 /* ФОРМА */
-.forma {
+.form {
   position: relative;
   align-items: center;
   width: 528px;
-  /* height: 581px; */
+  height: 581px;
   background: var(--hero-text-color);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  padding: 40px;
+  /* padding: 40px; */
   margin: auto;
 }
+.form-elements {
+  padding: 0 40px 20px 40px;
+}
+
 .topic {
   font-family: Roboto;
   font-style: normal;
@@ -291,9 +295,115 @@ span {
 
   color: #212121;
   margin: 0;
-
+  padding: 40px;
   padding-bottom: 30px;
 }
+.forma-fild {
+  position: relative;
+  display: flex;
+  padding: 0;
+  /* padding-bottom: 28px; */
+  margin-bottom: 28px;
+}
+.forma-fild:focus-within > .icon-forma {
+  fill: var(--hover-link-color);
+  border-color: var(--hover-link-color);
+}
+
+.forma-fild:focus-within > .forma-name {
+  transform: translate(-30px, -200%);
+  color: var(--hover-link-color);
+}
+.forma-input:focus {
+  border-color: var(--hover-link-color);
+  outline: none;
+}
+.comments-fild:focus {
+  border-color: var(--hover-link-color);
+  outline: none;
+}
+
+.forma-input:not(:placeholder-shown) + .forma-name {
+  transform: translate(-30px, -200%);
+  color: var(--hover-link-color);
+  border-color: var(--hover-link-color);
+}
+/* .forma-input:placeholder-shown {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+} */
+
+.forma-input {
+  /* position: relative; */
+
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 0;
+  padding: 12px 42px;
+}
+.forma-name {
+  position: absolute;
+  font-family: Roboto;
+  font-size: 14px;
+
+  letter-spacing: 0.01em;
+  color: #757575;
+  padding: 0;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+
+  margin: 0;
+}
+
+.comments {
+  position: relative;
+  display: block;
+  width: 448px;
+
+  min-height: 120px;
+}
+.comments-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* top: 16px;
+  left: 12px; */
+}
+.comments-fild {
+  display: block;
+  resize: none;
+  width: 448px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 0;
+  min-height: 120px;
+  padding: 16px 12px;
+}
+.comments:focus-within > .comments-name {
+  color: var(--hover-link-color);
+  transform: translate(-100% -100%);
+}
+.comments:not(:placeholder-shown) > .comments-name {
+  transform: translate(-100% -100%);
+  color: var(--hover-link-color);
+}
+
+.icon-forma {
+  position: absolute;
+
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+.conditions {
+  display: inline-block;
+  outline: 2px solid blue;
+}
+.checkbox:checked + .icon-forma {
+  fill: blue;
+}
+
 .button-close {
   position: absolute;
   top: -9px;
@@ -305,7 +415,9 @@ span {
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 50%;
   border: 0;
+  cursor: pointer;
 }
+
 .button-form {
   display: inline-block;
 
@@ -327,6 +439,10 @@ span {
   cursor: pointer;
   padding: 10px 55px;
   margin: 0;
+}
+.button-submit {
+  display: flex;
+  justify-content: center;
 }
 .our-advantage {
   padding-top: 94px;
@@ -853,17 +969,54 @@ address {
   width: 231px;
 }
 .join {
+  /* display: flex; */
+  /* font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--hero-text-color);
+  text-align: center; */
+}
+.footer-form {
   display: flex;
+}
+.footer-label {
+  position: relative;
+  display: flex;
+  width: 358px;
+  margin-right: 12px;
+}
+.input-mail {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  padding: 0;
+  padding: 18px 12px;
+  background-color: var(--footer-background-color);
+  outline: none;
+}
+.mail-text {
+  position: absolute;
+  font-family: Roboto;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  /* letter-spacing: 3%; */
+    color: rgba(255, 255, 255, 0.6);
+  padding: 0;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  margin: 0;
+}
+.input-mail:hover- .join-text {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 21px;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   color: var(--hero-text-color);
-  text-align: center;
-}
-.join-text {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 21px;
 }
 
 .invitation {

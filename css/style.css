@@ -982,6 +982,7 @@ address {
   left: 42px;
   transform: translateY(-50%);
   margin: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comments {
   position: relative;
@@ -1000,6 +1001,7 @@ address {
 
   top: 12px;
   left: 16px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comments-fild {
   display: block;
@@ -1070,6 +1072,7 @@ address {
   background-image: url("../images/icon-check.svg");
   background-size: contain;
   background-origin: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-close {

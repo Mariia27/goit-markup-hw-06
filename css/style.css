@@ -880,7 +880,7 @@ address {
 /* ФОРМА */
 .form {
   position: relative;
-  align-items: center;
+
   width: 528px;
   /* height: 581px; */
   background: var(--hero-text-color);
@@ -888,7 +888,10 @@ address {
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   /* padding: 40px; */
-  margin: auto;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .backdrop {

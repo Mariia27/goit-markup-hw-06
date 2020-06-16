@@ -63,7 +63,7 @@
         </h1>
         
 
-    <button type="button" class="button-main">Заказать услугу</button>
+    <button  class="button-main" data-open-modal>Заказать услугу</button>
         
       </section>
       <!-- наші переваги -->
@@ -433,16 +433,15 @@
       
 
     <!-- ФОРМИ-->
+  <div class="backdrop is-hidden" data-modal>
     <form class="form js-speaker-form">
-    
-      <h2 class="topic"> Оставьте свои данные, мы вам перезвоним</h2>
-    
-    
+       <h2 class="topic"> Оставьте свои данные, мы вам перезвоним</h2>
+        
       <div class="form-elements">
         <label class="forma-fild">
           <input type="text" class="forma-input" placeholder=" " />
           <span class="forma-name">Имя</span>
-          <svg class="icon-forma" width="15px" height="15px">
+          <svg class="icon-forma" width="18px" height="18px">
             <use href="./images/svg.svg#icon-person"></use>
           </svg>
         </label>
@@ -450,7 +449,7 @@
         <label class="forma-fild">
           <input type="tel" class="forma-input" placeholder=" " />
           <span class="forma-name">Телефон</span>
-          <svg class="icon-forma" width="15px" height="15px">
+          <svg class="icon-forma" width="18px" height="18px">
             <use href="./images/svg.svg#icon-phone-black"></use>
           </svg>
         </label>
@@ -458,18 +457,17 @@
         <label class="forma-fild">
           <input type="email" class="forma-input" placeholder=" " />
           <span class="forma-name">Почта</span>
-          <svg class="icon-forma" width="15px" height="15px">
+          <svg class="icon-forma" width="18px" height="18px">
             <use href="./images/svg.svg#icon-envelope1"></use>
           </svg>
     
         </label>
     
         <div class="comments">
-    
-          <textarea class="comments-fild" placeholder=" "></textarea>
+            <textarea class="comments-fild" placeholder=" "></textarea>
           <span class="comments-name">Комментарий</span>
-    
         </div>
+    
       </div>
       <div class="checkbox-fild">
         <label class="checkbox-label">
@@ -480,14 +478,15 @@
         </label>
       </div>
       <div class="button-submit">
-        <button type="submit" class="button-form">Отправить</button>
+        <button  class="button-form">Отправить</button>
       </div>    
-      <button type="button" class="button-close">
-        <svg class="icon-close" width="11px" height="11px">
+      <button  class="button-close" data-close-modal>
+        <svg class="icon-close" width="18px" height="18px">
           <use href="./images/svg.svg#icon-close"></use>
         </svg>
       </button>    
     </form>
+  </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
